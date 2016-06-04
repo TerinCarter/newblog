@@ -10,7 +10,7 @@
 <nav class="navbar navbar-default">
 	<div class="container">
 	  <div class="navbar-header">
-	    <a class="navbar-brand" href="#">Blog</a>
+	    <a class="navbar-brand">Blog</a>
 	  </div>
 	    <ul class='nav navbar-nav navbar-right'>
 		<% if user_signed_in? %>
@@ -24,6 +24,7 @@
 			  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 			</li>
 		<% else %>
+		<a class="navbar-brand">Login or register and you can leave posts!</a>
 		<li>
 	      	  <%= link_to 'Home', posts_path %>
 	    	</li>
