@@ -4,6 +4,8 @@ gem 'rails', '4.2.6'
 
 group :development do
   gem 'sqlite3'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
 end
 
 gem 'rspec-rails'
@@ -31,19 +33,9 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-group :development, :test do
- 
-  gem 'byebug'
-end
+gem 'byebug'
+gem 'slim-rails'
+gem 'bootstrap-sass'
+gem 'devise'
 
-group :development do
-  gem 'web-console', '~> 2.0'
-
-  gem 'spring'
-
-  gem 'slim-rails'
-  gem 'bootstrap-sass'
-  gem 'devise'
-
-end
 
