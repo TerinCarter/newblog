@@ -76,6 +76,7 @@ GEM
     ffi (1.9.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    headless (2.2.3)
     i18n (0.7.0)
     jbuilder (2.5.0)
       activesupport (>= 3.0.0, < 5.1)
@@ -147,7 +148,7 @@ GEM
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    rubyzip (0.9.9)
+    rubyzip (1.2.0)
     sass (3.4.22)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -158,11 +159,13 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    selenium-webdriver (2.35.1)
+    selenium-webdriver (2.38.0)
       childprocess (>= 0.2.5)
       multi_json (~> 1.0)
-      rubyzip (< 1.0.0)
+      rubyzip (~> 1.0)
       websocket (~> 1.0.4)
+    shoulda-matchers (3.1.1)
+      activesupport (>= 4.0.0)
     slim (3.0.7)
       temple (~> 0.7.6)
       tilt (>= 1.3.3, < 2.1)
@@ -208,16 +211,18 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   byebug
-  capybara
+  capybara (~> 2.1.0)
   coffee-rails (~> 4.1.0)
   devise
+  headless
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.6)
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
-  selenium-webdriver
+  selenium-webdriver (~> 2.38.0)
+  shoulda-matchers
   slim-rails
   spring
   sqlite3

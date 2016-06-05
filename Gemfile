@@ -8,8 +8,10 @@ gem 'sqlite3'
 gem 'rspec-rails'
 
 group :test do
-gem 'selenium-webdriver'
-gem 'capybara'
+gem 'selenium-webdriver', '~> 2.38.0'
+gem 'capybara', '~> 2.1.0' 
+gem 'headless'
+gem 'shoulda-matchers'
 end
 
 # Use SCSS for stylesheets
