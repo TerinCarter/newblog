@@ -1,0 +1,28 @@
+h1 All users
+
+table
+  thead
+    tr
+      th Email
+      th Password
+      th Admin
+      <!-- th Give admin rights -->
+
+  tbody
+    - @users = User.all
+    - @users.each do |user|
+      tr
+        td = user.email
+        td = '******'
+        - if user.admin?
+          td = 'Yes'
+        - else
+          td = 'No'
+        <!-- - if user.admin? -->
+         <!-- td = link_to ' Delete ', all_user_delete_path(user) -->
+        <!-- - else -->
+        <!--  td = link_to ' Add ', all_user_add_path(user) -->
+
+
+
+br

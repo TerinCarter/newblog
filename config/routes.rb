@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  put 'all_user/update'
+
+  get 'all_user/delete'
+
+  get 'all_user/add'
+
+  get 'all_user/index'
+
   devise_for :admins
   resources :posts
   devise_for :users

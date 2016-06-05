@@ -14,8 +14,14 @@
 	  </div>
 	    <ul class='nav navbar-nav navbar-right'>
 		<% if user_signed_in? %>
+			<% if current_user.admin? %>
+			  <a class="navbar-brand">Hello, admin!</a>
+			<% end %>
 			<li>
 	      		  <%= link_to 'Home', posts_path %>
+	    		</li>
+			<li>
+			  <%= link_to "Users", all_user_index_path %>
 	    		</li>
 			<li>
 			  <%= link_to "Edit my profile", edit_user_registration_path %>
