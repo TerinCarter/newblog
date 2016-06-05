@@ -10,7 +10,8 @@ class AllUserController < ApplicationController
   end
 
   def add
-    #@user = User.find(params[:id])
+    #@user = User.find_by_id(params[:id])
+    #@user.update_attribute(:admin, true)
   end
 
   def delete

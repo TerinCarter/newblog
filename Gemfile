@@ -33,15 +33,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'byebug'
+gem 'slim-rails'
+gem 'bootstrap-sass'
+gem 'devise'
 
 group :development do
   gem 'web-console', '~> 2.0'
-
   gem 'spring'
-
-  gem 'slim-rails'
-  gem 'bootstrap-sass'
-  gem 'devise'
-
 end
 

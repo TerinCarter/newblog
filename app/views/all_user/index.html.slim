@@ -5,7 +5,8 @@ table
     tr
       th Email
       th Password
-      th Admin
+      - if current_user.admin?
+        th Admin
       <!-- th Give admin rights -->
 
   tbody
@@ -14,15 +15,13 @@ table
       tr
         td = user.email
         td = '******'
-        - if user.admin?
-          td = 'Yes'
-        - else
-          td = 'No'
+        - if current_user.admin?
+          - if user.admin?
+            td = 'Yes'
+          - else
+            td = 'No'
         <!-- - if user.admin? -->
          <!-- td = link_to ' Delete ', all_user_delete_path(user) -->
         <!-- - else -->
-        <!--  td = link_to ' Add ', all_user_add_path(user) -->
-
-
-
+          <!-- td = link_to ' Add ', all_user_add_path(user) -->
 br
