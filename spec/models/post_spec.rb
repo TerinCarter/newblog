@@ -1,4 +1,4 @@
-#require 'rspec_helper'
+#require 'rails_helper'
 
 #describe Post do
   #it { should validate_presence_of :title }

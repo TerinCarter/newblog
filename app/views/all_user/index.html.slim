@@ -7,7 +7,7 @@ table
       th Password
       - if current_user.admin?
         th Admin
-      <!-- th Give admin rights -->
+        <!-- th Give admin rights -->
 
   tbody
     - @users = User.all
@@ -20,8 +20,8 @@ table
             td = 'Yes'
           - else
             td = 'No'
-        <!-- - if user.admin? -->
-         <!-- td = link_to ' Delete ', all_user_delete_path(user) -->
-        <!-- - else -->
-          <!-- td = link_to ' Add ', all_user_add_path(user) -->
+          <!-- - if user.admin? -->
+            <!-- td = link_to ' Delete ', all_user_delete_path(user) -->
+          <!-- - else -->
+            <!-- td = link_to ' Add ', all_user_add_path(user) -->
 br

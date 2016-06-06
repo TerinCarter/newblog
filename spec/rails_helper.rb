@@ -7,8 +7,8 @@ require 'spec_helper'
 require 'rspec/rails'
 #require 'devise'
 # Add additional requires below this line. Rails is not loaded until this point!
-#require 'capybara/rspec'
-#include Capybara::DSL 
+require 'capybara/rspec'
+include Capybara::DSL 
 
 #RSpec.configure do |config| 
   #config.include Devise::TestHelpers, :type => :controller 
